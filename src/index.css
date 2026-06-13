@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Mediterranean Luxury Design System */
+@layer base {
+  :root {
+    /* Primary: Deep Azure #1B3A5C */
+    --primary: 210 54% 23%;
+    --primary-foreground: 40 50% 88%;
+    --primary-hover: 210 54% 18%;
+
+    /* Accent: Terracotta #C17A52 */
+    --accent: 22 44% 54%;
+    --accent-foreground: 0 0% 100%;
+    --accent-hover: 22 44% 46%;
+
+    /* Background: warm off-white #FAF9F6 */
+    --background: 45 25% 98%;
+    --foreground: 0 0% 10%;
+
+    /* Card: pure white */
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 10%;
+
+    /* Secondary: Sand #E8D5B0 */
+    --secondary: 38 44% 80%;
+    --secondary-foreground: 210 54% 23%;
+
+    /* Muted: light sand tint */
+    --muted: 40 25% 94%;
+    --muted-foreground: 0 0% 42%;
+
+    /* Border: warm #E5DDD0 */
+    --border: 34 24% 86%;
+    --input: 34 24% 92%;
+    --ring: 210 54% 23%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 98%;
+
+    --radius: 8px;
+
+    /* Spacing scale */
+    --space-xs: 0.5rem;
+    --space-sm: 1rem;
+    --space-md: 1.5rem;
+    --space-lg: 2rem;
+    --space-xl: 3rem;
+    --space-2xl: 4rem;
+    --space-3xl: 6rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-display;
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+  }
+}
+
+@layer components {
+  /* Buttons */
+  .btn-primary {
+    @apply bg-azure text-sand-light font-sans font-medium px-6 py-3 rounded transition-all duration-200 shadow-warm hover:bg-azure-dark hover:shadow-warm-md hover:-translate-y-px;
+  }
+
+  .btn-accent {
+    @apply bg-terracotta text-white font-sans font-medium px-6 py-3 rounded transition-all duration-200 shadow-warm hover:bg-terracotta-dark hover:shadow-warm-md hover:-translate-y-px;
+  }
+
+  .btn-ghost {
+    @apply border border-white/60 text-white font-sans font-medium px-6 py-3 rounded transition-all duration-200 hover:bg-white/10;
+  }
+
+  .btn-outline {
+    @apply border border-azure text-azure font-sans font-medium px-6 py-3 rounded transition-all duration-200 hover:bg-azure hover:text-sand-light;
+  }
+
+  /* Cards */
+  .card-luxury {
+    @apply bg-card rounded-lg shadow-warm border border-border/60 overflow-hidden;
+  }
+
+  /* Section spacing */
+  .section-padding {
+    @apply py-14 lg:py-20;
+  }
+
+  /* Page header — gradient fade into content, no hard line */
+  .page-header {
+    @apply pt-24 pb-8 bg-gradient-to-b from-muted/50 via-muted/20 to-background;
+  }
+
+  /* Tinted section — light gradient wash, blends to background */
+  .section-tinted {
+    background: linear-gradient(180deg, hsl(40 25% 94% / 0.3) 0%, hsl(45 25% 98%) 100%);
+  }
+
+  /* Reverse tinted — background fades into a light wash */
+  .section-tinted-reverse {
+    background: linear-gradient(180deg, hsl(45 25% 98%) 0%, hsl(40 25% 94% / 0.3) 100%);
+  }
+
+  .section-title {
+    @apply font-display text-4xl lg:text-5xl text-foreground;
+  }
+
+  .section-subtitle {
+    @apply font-sans text-muted-foreground text-lg leading-relaxed;
+  }
+
+  /* Nav link */
+  .nav-link {
+    @apply font-sans text-[15px] font-semibold tracking-[0.03em] transition-colors duration-200;
+  }
+}
