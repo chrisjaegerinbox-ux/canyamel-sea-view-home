@@ -81,7 +81,9 @@ const Navigation = () => {
       className={`fixed top-0 left-0 right-0 z-50 ${
         transparent
           ? 'bg-transparent border-b border-transparent'
-          : 'bg-white/98 border-b border-border shadow-[0_1px_12px_rgba(27,58,92,0.06)] backdrop-blur-sm'
+          : isOpen
+            ? 'bg-white border-b border-border shadow-[0_1px_12px_rgba(27,58,92,0.06)]'
+            : 'bg-white/98 border-b border-border shadow-[0_1px_12px_rgba(27,58,92,0.06)] backdrop-blur-sm'
       }`}
       style={{
         transform: visible ? 'translateY(0)' : 'translateY(-100%)',
@@ -180,16 +182,16 @@ const Navigation = () => {
 
         {/* Mobile Dropdown */}
         {isOpen && (
-          <div className="md:hidden py-3 border-t border-border/60">
+          <div className="md:hidden py-2 border-t border-border/40 bg-white">
             <div className="flex flex-col">
               {navItems.map((item) => (
                 <Link
                   key={item.to}
                   to={item.to}
-                  className={`px-2 py-3 text-[14px] font-medium tracking-[0.03em] rounded transition-colors ${
+                  className={`px-3 py-3.5 text-[15px] font-medium tracking-[0.02em] rounded-lg transition-colors ${
                     isActive(item.to)
                       ? 'text-terracotta'
-                      : 'text-foreground/80 hover:text-azure'
+                      : 'text-foreground hover:text-azure hover:bg-azure/5'
                   }`}
                 >
                   {item.label}
