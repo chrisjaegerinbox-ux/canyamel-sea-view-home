@@ -34,10 +34,8 @@ import gaestebad2 from '@/assets/gaestebad-2.jpg';
 import dusche2 from '@/assets/dusche2.jpg';
 import hauptbad22 from '@/assets/hauptbad-2-2.jpg';
 import hauptbad1 from '@/assets/hauptbad-1.jpg';
-import kuehlschrank from '@/assets/kuehlschrank.jpg';
-import waschraumGeraete from '@/assets/waschraum-geraete.jpg';
-import waschraumAusstattung from '@/assets/waschraum-ausstattung.jpg';
-import waschmaschine from '@/assets/waschmaschine.jpg';
+import waschraum1 from '@/assets/waschraum1neu.jpg';
+import waschraum2 from '@/assets/waschraumneu2.jpg';
 import wohnbereichFlur from '@/assets/wohnbereich-flur.jpg';
 import wohnbereichEingang from '@/assets/wohnbereich-eingang.jpg';
 import whz6 from '@/assets/whz6.jpg';
@@ -62,7 +60,7 @@ const roomImages: Record<string, string[]> = {
   "Badezimmer 1": [hauptbad22, hauptbad1], // No bathroom images available yet
   "Badezimmer 2": [gaestebad2, dusche2], // No bathroom images available yet
   "Balkon mit Meerblick": [balconySportmatte, balconyTitelbild],
-  "Waschraum": [kuehlschrank, waschraumGeraete, waschraumAusstattung, waschmaschine], // No laundry room images available
+  "Waschraum": [waschraum1, waschraum2],
   "Poolbereich": [pool22, pool2, duscheNeu2]
 };
 
