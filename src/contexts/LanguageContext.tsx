@@ -565,7 +565,7 @@ const translations = {
     // Apartment page
     'apartment.tabs.rooms': 'Räume',
     'apartment.tabs.equipment': 'Ausstattung',
-    'apartment.tabs.floorplan': 'Grundriss',
+    'apartment.tabs.floorplan': 'Grundriss und Fotos',
     'apartment.header.title': 'Das Apartment',
     'apartment.header.sub': '2 Schlafzimmer · 2 Bäder · Meerblick-Balkon · Pool',
     'apartment.equip.cat1.item1': 'WLAN 300 Mbit/s — perfekt für Video-Calls',
@@ -1184,7 +1184,7 @@ const translations = {
     // Apartment page
     'apartment.tabs.rooms': 'Rooms',
     'apartment.tabs.equipment': 'Equipment',
-    'apartment.tabs.floorplan': 'Floor Plan',
+    'apartment.tabs.floorplan': 'Floor Plan & Photos',
     'apartment.header.title': 'The Apartment',
     'apartment.header.sub': '2 Bedrooms · 2 Bathrooms · Sea-View Balcony · Pool',
     'apartment.equip.cat1.item1': 'WiFi 300 Mbit/s — perfect for video calls',
@@ -1803,7 +1803,7 @@ const translations = {
     // Apartment page
     'apartment.tabs.rooms': 'Habitaciones',
     'apartment.tabs.equipment': 'Equipamiento',
-    'apartment.tabs.floorplan': 'Plano',
+    'apartment.tabs.floorplan': 'Plano y Fotos',
     'apartment.header.title': 'El Apartamento',
     'apartment.header.sub': '2 dormitorios · 2 baños · Balcón con vistas al mar · Piscina',
     'apartment.equip.cat1.item1': 'WiFi 300 Mbit/s — ideal para videollamadas',
