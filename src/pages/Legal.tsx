@@ -102,7 +102,7 @@ const Legal = () => {
                   <p>Wenn Sie uns über das Kontakt- oder Mietanfrageformular personenbezogene Daten übermitteln, verarbeiten wir die von Ihnen angegebenen Informationen zur Bearbeitung Ihrer Anfrage sowie zur Anbahnung, Vorbereitung und gegebenenfalls Durchführung eines Mietverhältnisses.</p>
                   <p className="mt-3">Hierzu können insbesondere folgende Daten gehören:</p>
                   <ul className="mt-2 space-y-1.5 ml-4">
-                    {['Name', 'E-Mail-Adresse', 'Telefonnummer', 'Gewünschter Mietzeitraum', 'Anzahl der Personen', 'Inhalt Ihrer Nachricht', 'Weitere freiwillige Angaben im Zusammenhang mit Ihrer Mietanfrage'].map(item => (
+                    {['Name', 'E-Mail-Adresse', 'Telefonnummer', 'Gewünschter Mietzeitraum', 'Zweck des Aufenthalts', 'Anzahl der Personen', 'Inhalt Ihrer Nachricht', 'Weitere freiwillige Angaben im Zusammenhang mit Ihrer Mietanfrage'].map(item => (
                       <li key={item} className="flex items-start gap-2">
                         <span className="mt-2 w-1 h-1 rounded-full bg-muted-foreground/50 flex-shrink-0" />
                         {item}
@@ -123,6 +123,7 @@ const Legal = () => {
                   <p>Eine Weitergabe personenbezogener Daten erfolgt nur, soweit dies zur Bearbeitung der Mietanfrage, zur Vorbereitung oder Durchführung eines Mietverhältnisses, zur technischen Bereitstellung der Website oder aufgrund gesetzlicher Pflichten erforderlich ist. Eine Weitergabe kann insbesondere an folgende Empfänger erfolgen:</p>
                   <ul className="mt-2 space-y-1.5 ml-4">
                     {[
+                      'Vercel Inc. (USA) — Hosting dieser Website',
                       'Formspree, Inc. (USA) — technische Übermittlung der Formularanfragen per E-Mail',
                       'E-Mail-Provider zur Zustellung und Bearbeitung der Anfrage',
                       'Dienstleister im Zusammenhang mit der Wohnungsverwaltung, Übergabe oder Abwicklung des Mietverhältnisses',
@@ -141,7 +142,7 @@ const Legal = () => {
                 <Section title="5. Hosting und Server-Logfiles">
                   <p>Beim Aufruf dieser Website werden durch den Hosting-Anbieter technisch notwendige Daten verarbeitet, um die Website sicher und stabil bereitzustellen. Hierzu können insbesondere IP-Adresse, Datum und Uhrzeit des Zugriffs, aufgerufene Seiten, Browsertyp und Betriebssystem sowie die übertragene Datenmenge gehören.</p>
                   <p className="mt-3">Die Verarbeitung erfolgt auf Grundlage von <strong className="font-medium text-foreground/80">Art. 6 Abs. 1 lit. f DSGVO</strong>. Das berechtigte Interesse liegt in der sicheren, stabilen und fehlerfreien Bereitstellung der Website.</p>
-                  <p className="mt-3">Hosting-Anbieter: <strong className="font-medium text-foreground/80">[Hosting-Anbieter bitte vor Veröffentlichung ergänzen]</strong></p>
+                  <p className="mt-3">Hosting-Anbieter: <strong className="font-medium text-foreground/80">Vercel Inc. (USA)</strong></p>
                 </Section>
 
                 {/* 6. Cookies und lokale Speicherung */}
@@ -217,7 +218,7 @@ const Legal = () => {
 
                 {/* Stand */}
                 <p className="font-sans text-xs text-muted-foreground/60 pt-2">
-                  Stand: Juni 2026. Wir behalten uns vor, diese Datenschutzerklärung anzupassen, wenn sich die Website, die eingesetzten technischen Dienste oder die rechtlichen Anforderungen ändern.
+                  Stand: November 2026. Wir behalten uns vor, diese Datenschutzerklärung anzupassen, wenn sich die Website, die eingesetzten technischen Dienste oder die rechtlichen Anforderungen ändern.
                 </p>
 
               </div>
@@ -263,7 +264,7 @@ const Legal = () => {
                   </Section>
                 </div>
 
-                <p className="font-sans text-xs text-muted-foreground/60 pt-2">Stand: Juni 2026</p>
+                <p className="font-sans text-xs text-muted-foreground/60 pt-2">Stand: November 2026</p>
 
               </div>
             )}

@@ -48,7 +48,7 @@ const Apartment = () => {
     {
       icon: Monitor,
       title: t('equipment.office'),
-      items: [t('apartment.equip.cat1.item1'), t('apartment.equip.cat1.item2'), t('apartment.equip.cat1.item3'), t('apartment.equip.cat1.item4'), t('apartment.equip.cat1.item5'), t('apartment.equip.cat1.item6')],
+      items: [t('apartment.equip.cat1.item1'), t('apartment.equip.cat1.item2'), t('apartment.equip.cat1.item3'), t('apartment.equip.cat1.item4'), t('apartment.equip.cat1.item5')],
     },
     {
       icon: UtensilsCrossed,
@@ -63,7 +63,7 @@ const Apartment = () => {
     {
       icon: Waves,
       title: t('equipment.outdoor'),
-      items: [t('apartment.equip.cat4.item1'), t('apartment.equip.cat4.item2'), t('apartment.equip.cat4.item3'), t('apartment.equip.cat4.item4'), t('apartment.equip.cat4.item5'), t('apartment.equip.cat4.item6')],
+      items: [t('apartment.equip.cat4.item1'), t('apartment.equip.cat4.item2'), t('apartment.equip.cat4.item3'), t('apartment.equip.cat4.item4'), t('apartment.equip.cat4.item6')],
     },
   ];
 

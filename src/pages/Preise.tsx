@@ -54,10 +54,7 @@ const Preise = () => {
               </div>
 
               {/* Summer */}
-              <div className="card-luxury overflow-visible relative ring-2 ring-terracotta">
-                <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-terracotta text-white text-xs font-sans font-medium px-3 py-1 rounded-full whitespace-nowrap">
-                  {t('prices.popular')}
-                </div>
+              <div className="card-luxury overflow-visible relative">
                 <div className="bg-terracotta/5 px-6 pt-6 pb-5 border-b border-border">
                   <div className="flex items-center gap-2.5 mb-3">
                     <Sun className="w-4 h-4 text-terracotta" />
@@ -74,7 +71,7 @@ const Preise = () => {
                   <p className="font-sans text-xs text-muted-foreground mb-6">{t('prices.utilities')}</p>
                   <Link
                     to="/kontakt?saison=sommer"
-                    className="btn-accent w-full text-center block text-sm"
+                    className="btn-outline w-full text-center block text-sm"
                   >
                     <MessageSquare className="w-4 h-4 inline mr-2" />
                     {t('prices.ctaSummer')}

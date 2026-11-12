@@ -12,7 +12,7 @@ const labelClass = "block text-sm font-medium font-sans text-foreground mb-1.5";
 const Kontakt = () => {
   const { t } = useLanguage();
   const [formData, setFormData] = useState({
-    name: '', email: '', phone: '', checkIn: '', checkOut: '', guests: '1', message: ''
+    name: '', email: '', phone: '', checkIn: '', checkOut: '', purpose: '', guests: '1', message: ''
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -32,7 +32,7 @@ const Kontakt = () => {
       });
       if (response.ok) {
         setIsSubmitted(true);
-        setFormData({ name: '', email: '', phone: '', checkIn: '', checkOut: '', guests: '1', message: '' });
+        setFormData({ name: '', email: '', phone: '', checkIn: '', checkOut: '', purpose: '', guests: '1', message: '' });
       }
     } catch {
       alert(t('contact.sendError'));
@@ -115,6 +115,10 @@ const Kontakt = () => {
                     {/* hidden inputs keep Formspree submission intact */}
                     <input type="hidden" name="checkIn" value={formData.checkIn} />
                     <input type="hidden" name="checkOut" value={formData.checkOut} />
+                  </div>
+                  <div>
+                    <label className={labelClass}>{t('contact.purpose')}{t('contact.required')}</label>
+                    <input type="text" name="purpose" value={formData.purpose} onChange={handleChange} required className={inputClass} placeholder={t('contact.purposePlaceholder')} />
                   </div>
                   <div>
                     <label className={labelClass}>{t('contact.guests')}{t('contact.required')}</label>
