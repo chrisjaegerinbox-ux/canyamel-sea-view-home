@@ -1,7 +1,7 @@
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import MallorcaLocationMap from '@/components/MallorcaLocationMap';
-import { ExternalLink, Car, Waves, ShoppingBag, MapPin, Laptop, Utensils, TreePine, Bus } from 'lucide-react';
+import { Car, Waves, ShoppingBag, MapPin, Laptop, Utensils, TreePine, Bus } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 
 const features = [
@@ -13,12 +13,6 @@ const features = [
   { icon: TreePine,    keyTitle: 'canyamel.feature6Title', keyDesc: 'canyamel.feature6Desc' },
 ];
 
-const links = [
-  { href: 'https://yes-mallorca-immobilien.de/blog/mallorca/canyamel-reisefuhrer/', keyTitle: 'canyamel.linkGuide',     keyDesc: 'canyamel.linkGuideDesc' },
-  { href: 'https://www.holamallorca.com/de/mallorca/reisefuehrer/orte/canyamel.htm', keyTitle: 'canyamel.linkHiking',  keyDesc: 'canyamel.linkHikingDesc' },
-  { href: 'https://www.abc-mallorca.de/canyamel/',                                   keyTitle: 'canyamel.linkAbout',   keyDesc: 'canyamel.linkAboutDesc' },
-  { href: 'https://maps.app.goo.gl/X8THkTvZ4ZLPasHt8',                              keyTitle: 'canyamel.linkLocation', keyDesc: 'canyamel.linkLocationDesc' },
-];
 
 const Canyamel = () => {
   const { t } = useLanguage();
@@ -100,7 +94,7 @@ const Canyamel = () => {
         </div>
       </section>
 
-      {/* Mobility + Links */}
+      {/* Mobility */}
       <section className="py-10 lg:py-14 section-tinted">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto space-y-8">
@@ -124,35 +118,6 @@ const Canyamel = () => {
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-
-            {/* Useful Links */}
-            <div>
-              <div className="text-center mb-5">
-                <p className="font-sans text-xs font-medium tracking-[0.2em] uppercase text-terracotta mb-2">{t('canyamel.links.eyebrow')}</p>
-                <h2 className="font-display text-2xl font-semibold text-foreground mb-1">{t('canyamel.linksTitle')}</h2>
-                <p className="font-sans text-sm text-muted-foreground">{t('canyamel.linksSubtitle')}</p>
-              </div>
-
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                {links.map(({ href, keyTitle, keyDesc }) => (
-                  <a
-                    key={keyTitle}
-                    href={href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="card-luxury p-4 flex items-center justify-between gap-4 hover:shadow-warm-md transition-shadow duration-200 group"
-                  >
-                    <div>
-                      <h3 className="font-display text-sm font-semibold text-foreground group-hover:text-azure transition-colors duration-200 mb-0.5">
-                        {t(keyTitle)}
-                      </h3>
-                      <p className="font-sans text-xs text-muted-foreground">{t(keyDesc)}</p>
-                    </div>
-                    <ExternalLink className="w-4 h-4 text-muted-foreground/40 group-hover:text-azure transition-colors duration-200 flex-shrink-0" />
-                  </a>
-                ))}
               </div>
             </div>
 
